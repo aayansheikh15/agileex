@@ -14,6 +14,13 @@ spec:
     spec:
       containers:
         - name: myproject-container
-          image: yourdockerhubusername/myproject:1.0
+          image: aayansheikh15/myproject:1.0
           ports:
             - containerPort: 5000
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "250m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
